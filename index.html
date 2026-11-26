@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Personal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #101c35;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h2 {
+      color: #67d5c1;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #67d5c1;
+    }
+
+    .hero {
+      min-height: 85vh;
+      padding: 100px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #101c35, #243c60);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #67d5c1;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 19px;
+      color: #d1dbea;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #67d5c1;
+      color: #101c35;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    section {
+      padding: 75px 10%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #101c35;
+    }
+
+    .about {
+      max-width: 850px;
+    }
+
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      color: #243c60;
+      margin-bottom: 10px;
+    }
+
+    .experience {
+      border-left: 3px solid #67d5c1;
+      padding: 5px 0 5px 25px;
+      margin-bottom: 25px;
+    }
+
+    .contact {
+      background: #101c35;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #0b1426;
+      color: #aebbd0;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 75px 7%;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Salma Sherif Refaat.</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hello, I'm <span>Salma</span></h1>
+    <p>
+     Biomedical Engineering Graduate | Healthcare Technology
+    Enthusiast | Aspiring Biomedical Engineer.
+    Passionate about applying engineering and innovation
+    to improve healthcare and enhance people's lives.
+    </p>
+    <a class="btn" href="#about">Discover My Journey</a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>
+     I am a recent Biomedical Engineering graduate with
+      a strong interest in the intersection of engineering,
+      technology, and healthcare.
+
+      Throughout my academic journey, I developed a foundation
+      in biomedical instrumentation, medical devices,
+      electronics, and healthcare technologies.
+
+      I am passionate about learning, problem-solving,
+      and exploring innovative solutions that contribute
+      to better healthcare outcomes.
+
+      As I begin my professional career, I am eager to gain
+      practical experience, develop my technical skills,
+      collaborate with professionals, and contribute to
+      meaningful projects within the biomedical engineering
+      field.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Professional Skills</h3>
+        <p> Biomedical Instrumentation<br>
+        Medical Equipment Fundamentals<br>
+        Electronics & Circuit Analysis<br>
+        Medical Imaging Fundamentals<br>
+        Troubleshooting & Problem Solving</p>
+      </div>
+      <div class="card">
+        <h3>Technical Skills</h3>
+        <p>Add your technical and industry-specific skills.</p>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <p>Add the languages you speak and your proficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience & Education</h2>
+
+    <div class="experience">
+      <h3>Your Position / Degree</h3>
+      <p>Company / University | Year - Year</p>
+      <p>Briefly describe your responsibilities and achievements.</p>
+    </div>
+
+    <div class="experience">
+      <h3>Previous Experience / Education</h3>
+      <p>Company / University | Year - Year</p>
+      <p>Add relevant details about your journey.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Describe a project, achievement, or initiative.</p>
+      </div>
+
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Highlight another accomplishment or experience.</p>
+      </div>
+
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Showcase something you are proud of.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p>Interested in working together? Feel free to reach out.</p>
+
+    <a class="btn"
+       href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
+       target="_blank">
+       Visit My LinkedIn
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
